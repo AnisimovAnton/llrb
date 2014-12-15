@@ -1,0 +1,163 @@
+[FileVersion]
+Version=6.0
+[Compiler]
+A=8
+B=0
+C=1
+D=1
+E=0
+F=0
+G=1
+H=1
+I=1
+J=0
+K=0
+L=1
+M=0
+N=1
+O=1
+P=1
+Q=0
+R=0
+S=0
+T=0
+U=0
+V=1
+W=0
+X=1
+Y=1
+Z=1
+ShowHints=1
+ShowWarnings=1
+UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[Linker]
+MapFile=0
+OutputObjs=0
+ConsoleApp=1
+DebugInfo=0
+RemoteSymbols=0
+MinStackSize=16384
+MaxStackSize=1048576
+ImageBase=4194304
+ExeDescription=
+[Directories]
+OutputDir=
+UnitOutputDir=
+PackageDLLOutputDir=
+PackageDCPOutputDir=
+SearchPath=
+Packages=vcl;rtl;dbrtl;adortl;vcldb;vclx;bdertl;vcldbx;ibxpress;dsnap;cds;bdecds;qrpt;teeui;teedb;tee;dss;teeqr;visualclx;visualdbclx;dsnapcrba;dsnapcon;VclSmp;vclshlctrls;vclie;xmlrtl;inet;inetdbbde;inetdbxpress;inetdb;webdsnap;websnap;soaprtl;dbexpress;dbxcds;indy;GR32_D6;GR32_DSGN_D6;bsPolyglotD6;edtXpack;JclDeveloperTools;Jcl;JclContainers;JclVcl;JvCore;JvSystem;JvStdCtrls;JvAppFrm;JvBands;JvDB;JvDlgs;JvBDE;JvCustom;JvDocking;JvDotNetCtrls;JvCrypt;JvControls;JvGlobus;JvHMI;JvPascalInterpreter;JvJans;JvManagedThreads;JvCmp;JvMM;JvNet;JvPageComps;JvPluginSystem;JvPrintPreview;JvRuntimeDesign;JvTimeFramework;JvWizards;JvXPCtrls;dclOffice2k;nmfast;AnyDAC_Phys_D6;AnyDAC_ComI_D6;AnyDAC_PhysIB_D6;AnyDAC_PhysODBC_D6;AnyDAC_PhysOracle_D6;AnyDAC_PhysMSSQL_D6;AnyDAC_GUIxForms_D6;AnyDAC_Comp_D6;ThemeManagerD6;dummy;skd_lib
+Conditionals=
+DebugSourceDirs=
+UsePackages=0
+[Parameters]
+RunParams=
+HostApplication=
+Launcher=
+UseLauncher=0
+DebugCWD=
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=C:\Borland\Delphi6\Bin\
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=C:\projects\src\common\
+[HistoryLists\hlConditionals]
+Count=30
+Item0=EMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG_;USEDOORGROUPTYPES;USEDOORGROUPTYPES
+Item1=EMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG;USEDOORGROUPTYPES;USEDOORGROUPTYPES
+Item2=EMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG_;USEDOORGROUPTYPES;FSIN;USEDOORGROUPTYPES
+Item3=EMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG;USEDOORGROUPTYPES;FSIN;USEDOORGROUPTYPES
+Item4=EMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG;USEDOORGROUPTYPES_;FSIN
+Item5=EMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG;USEDOORGROUPTYPES_;FSIN
+Item6=MEMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE_;DEBUG;USEDOORGROUPTYPES_;FSIN
+Item7=MEMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE_;DEBUG;USEDOORGROUPTYPES;FSIN
+Item8=MEMCHK_;NET;RIGHTSDEBUG;KRICE;USELICENSE;MPKEY;DEBUG_WINDOW_;DEMO_;EXCIBITION_;REMOTE;DEBUG;USEDOORGROUPTYPES;FSIN
+Item9=net;remote;DEBUG_;mpkey;lic;demo_
+Item10=net;remote;DEBUG_;demo;lic_;mpkey_
+Item11=net;remote; _demo;lic;mpkey;DEBUG_
+Item12=net;remote; _demo;lic;mpkey;DEBUG
+Item13=net;remote; _demo;lic;mpkey
+Item14=net;remote; _demo;lic;mpkey;DEBUG;DEBUG
+Item15=net;remote; _demo;lic;mpkey;_DEBUG
+Item16=net;remote; _demo;_lic;_mpkey
+Item17=net;remote; _demo;_lic;mpkey
+Item18=DEBUG;net;remote; _demo;lic;mpkey
+Item19=DEBUG;net;remote; _demo;_lic;_mpkey
+Item20=DEBUG;net; remote; _demo;_lic;_mpkey
+Item21=DEBUG;net; remote; _demo;lic;mpkey
+Item22=net; remote; _demo;lic;mpkey
+Item23=DEBUG;net; remote; _demo;lic
+Item24=DEBUG;net; remote; _demo
+Item25=net; remote; _demo
+Item26=net; remote; demo
+Item27=net; remote;
+Item28=net; remote;
+Item29=net; remote; lic
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=15
+Item0=..\common;..\inc;..\lib;..\rus;..\res;.\obj;src
+Item1=..\common;..\inc;..\lib;..\rus;..\res;..\obj;src;C:\projects\src\lib
+Item2=$(DELPHI)\Lib\Debug;D:\DEGORO~1\JVCL\jcl\lib\d6\debug;D:\Install\Delphi\JEDI\jcl\lib\d6\debug;D:\Install\Delphi\JEDI\jvcl\lib\D6\debug;..\common;..\inc;..\lib;..\rus;..\res;..\obj;src;C:\projects\src\lib
+Item3=..\..\common;..\..\inc;..\..\lib;..\..\rus;..\..\res;..\..\obj
+Item4=C:\projects\common;C:\projects\inc;C:\projects\lib;C:\projects\rus;C:\projects\res;C:\projects\obj
+Item5=C:\projects\common;C:\projects\inc;C:\projects\lib;C:\projects\rus;C:\projects\res
+Item6=C:\projects\common;C:\projects\inc;C:\projects\lib;C:\projects\rus;C:\projects\pass2\res
+Item7=..\common;..\inc;..\res;..\rus;..\lib;C:\projects\common;..\obj
+Item8=..\common;..\inc;..\res;..\rus;..\lib;C:\projects\common
+Item9=..\common;..\inc;..\res;..\rus;..\lib;C:\Kodos Projects\common
+Item10=$(DELPHI)\Lib\Debug;C:\soft\jcl\lib\d6\debug;..\common;..\inc;..\res;..\rus;..\lib;C:\Kodos Projects\common
+Item11=..\common;..\inc;..\res;..\rus;..\lib
+Item12=common;inc;res;rus;lib
+Item13=common;inc;res;rus
+Item14=
+[HistoryLists\hlUnitOutputDirectory]
+Count=6
+Item0=.\obj
+Item1=..\obj
+Item2=\obj
+Item3=C:\projects\obj
+Item4=C:\projects\pass2\obj
+Item5=obj
+[HistoryLists\hlOutputDirectorry]
+Count=5
+Item0=D:\SSA\SKD
+Item1=C:\SSA\SKD
+Item2=..\bin
+Item3=bin
+Item4=C:\projects\pass2\bin
+[HistoryLists\hlBPLOutput]
+Count=1
+Item0=bin
+[HistoryLists\hlDCPOutput]
+Count=1
+Item0=lib
