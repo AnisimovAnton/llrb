@@ -20,6 +20,7 @@ type
     function insert(Parent: PRBNode; key: Integer): PRBNode; overload;
     function deleteMin(Parent: PRBNode): PRBNode; overload;
     function delete(Parent: PRBNode; key: Integer): PRBNode; overload;
+    function dropNode(Parent: PRBNode): PRBNode;
   public
     function search(key: Integer): PRBNode;
     procedure insert(key: Integer); overload;
@@ -37,6 +38,8 @@ begin
   New(Result);
   Result.Key := key;
   Result.isRed := True;
+  Result.Right := nil;
+  Result.Left := nil;
 end;
 
 function isRed(Node: PRBNode): Boolean;
@@ -155,8 +158,7 @@ function TLLRB.deleteMin(Parent: PRBNode): PRBNode;
 begin
   if not Assigned(Parent.Left) then
   begin
-    Result := nil;
-    Dec(FCount);
+    Result := dropNode(Parent);
     Exit;
   end;
   if not isRed(Parent.Left) and not isRed(Parent.Left.Left) then
@@ -168,13 +170,15 @@ end;
 procedure TLLRB.deleteMin;
 begin
   root := DeleteMin(root);
-  root.isRed := False;
+  if Assigned(root) then
+    root.isRed := False;
 end;
 
 procedure TLLRB.delete(key: Integer);
 begin
   root := delete(root, key);
-  root.isRed := False;
+  if Assigned(root) then
+    root.isRed := False;
 end;
 
 function TLLRB.delete(Parent: PRBNode; key: Integer): PRBNode;
@@ -191,8 +195,7 @@ begin
       Parent := rotateRight(Parent);
     if (key = Parent.Key) and not Assigned(Parent.Right) then
     begin
-      Result := nil;
-      Dec(FCount);
+      Result := dropNode(Parent);
       Exit;
     end;
     if not isRed(Parent.Right) and not isRed(Parent.Right.Left) then
@@ -225,6 +228,13 @@ begin
   SetLength(lst, FCount);
   i := 0;
   ListKey(root);
+end;
+
+function TLLRB.dropNode(Parent: PRBNode): PRBNode;
+begin
+  Dispose(Parent);
+  Result := nil;
+  Dec(FCount);
 end;
 
 end.
