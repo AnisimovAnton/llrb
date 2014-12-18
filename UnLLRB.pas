@@ -22,11 +22,13 @@ type
     function delete(Parent: PRBNode; key: Integer): PRBNode; overload;
     function dropNode(Parent: PRBNode): PRBNode;
   public
+    property Count: Integer read FCount;
     function search(key: Integer): PRBNode;
     procedure insert(key: Integer); overload;
     procedure deleteMin; overload;
     procedure delete(key: Integer); overload;
     procedure ListAll(var lst: Integers);
+    procedure ClearAll;
   end;
 
   TLeftLeaningRedBlackTree = TLLRB;
@@ -227,7 +229,8 @@ var
 begin
   SetLength(lst, FCount);
   i := 0;
-  ListKey(root);
+  if Assigned(root) then
+    ListKey(root);
 end;
 
 function TLLRB.dropNode(Parent: PRBNode): PRBNode;
@@ -235,6 +238,20 @@ begin
   Dispose(Parent);
   Result := nil;
   Dec(FCount);
+end;
+
+procedure TLLRB.ClearAll;
+  procedure DeleteNext(Parent: PRBNode);
+  begin
+    if not Assigned(Parent) then
+      Exit;
+    DeleteNext(Parent.Left);
+    DeleteNext(Parent.Right);
+    dropNode(Parent);
+  end;
+begin
+  DeleteNext(root);
+  root := nil;
 end;
 
 end.
